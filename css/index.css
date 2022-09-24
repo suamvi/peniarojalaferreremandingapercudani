@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+
+:root {
+--primary: #000000;
+--secondary: #BF3A3A;
+--accent: #7D7B7B;
+--light: #FFFFFF;
+
+--texto-xxl: 4.8em;
+--texto-xl: 3.6em;
+--texto-lg: 3.2em;
+--texto-md: 2.2em;
+--texto-sm: 1.6em;
+--texto-xs: 1.2em;
+
+--sp-xxl: 12rem;
+--sp-xl: 8rem;
+--sp-lg: 5rem;
+--sp-md: 3.2rem;
+--sp-sm: 1.6rem;
+--sp-xs: 0.8rem;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--texto-sm);
+    color: var(--secondary);
+}
+
+body {
+    background-color: var(--primary);
+}
+
+
+a {
+    font-size: var(--texto-md);
+    color: var(--secondary);
+}
+
+ul {
+    list-style-type: none;
+    color: var(--secondary);
+}
+
+a {
+    font-size: var(--texto-xs);
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    padding: var(--sp-sm);
+    background-color: var(--primary);
+}
+
+.navbar .navbar__link {
+    display: inline-block;
+}
+
+.navbar .menu {
+    display: inline-block;
+}
+
+.navbar .menu .menu__item {
+    display: inline-block;
+
+}
+
+.navbar .menu .menu__link {
+    color: var(--secondary);
+}
+
+footer {
+    background-color: var(--primary);
+}
+
+.container__caraevil {    
+    background-color: #812727;
+    border: 5px solid #8a1515;
+    border-radius: 30%;
+    bottom: 1px;
+    right: 1px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container__caraevil:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+@keyframes efecto {
+    0%{
+        box-shadow: 0 0 0 0 rgba(197, 62, 62, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+
+
+
+
+
+
+.container__boton {
+    flex-direction: column;    
+    background-color: #812727;
+    border: 5px solid #8a1515;
+    position: fixed;
+    z-index: 999;
+    border-radius: 10%;
+    bottom: 30px;
+    right: 30px;
+    padding: 1px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container__boton:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton {
+    width: 80px;
+    transition: ease 1s;
+}
+
+@keyframes efecto {
+    0%{
+        box-shadow: 0 0 0 0 rgba(197, 62, 62, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+
+
