@@ -72,7 +72,7 @@ header {
 }
 
 
-
+/**menu de navegacion**/
 
 .navbar .navbar__link {
     display: flex;
@@ -99,15 +99,22 @@ header {
     color: var(--secondary);
 }
 
+/**pie de paginas**/
+
 footer {
     background-color: var(--primary);
 }
 
-.container__caraevil { 
+/**cara del diablo**/
+
+.container__caraevil {
+    display: block;
+    width: 65%;
     text-align: center;
     border-radius: 50%;
 
 }
+
 
 .container__parrafo {
     text-align: justify;
@@ -118,7 +125,7 @@ footer {
     transition: 0.5s;
 }
 
-
+/** botones animados redes**/
 .container__boton {
     flex-direction: column;
     position: fixed;
@@ -150,6 +157,7 @@ footer {
     }
 }
 
+/**html nosotros**/
 .titulo__h1nosotros {
     text-align: center;
 }
@@ -172,36 +180,37 @@ footer {
 }
 
 
+/**socios**/
+
+.titulo__socios {
+    text-align: center;
+}
+
+.socios {
+    display: inline;
+    width: 20%;
+    margin-left: var(--sp-s);
+    margin-right: var(--sp-s);
+    padding-top: 2%;
+    padding-block-end: 2%;    
+}
+
+.socios {
+    transition: all 0.5s ease;
+}
+
+.socios:hover {
+    transform: scale(1.90);
+}
+
 
 //**formulatio**//
 
+.form__contacto {
+    display: flex;
+    flex-direction: column;
+}
 
-.btn {
-    border-radius: 15px;
-    display: inline-block;
-    padding: 20px 15px;
-    text-decoration: none;
-    text-shadow: #000000;
+h3 {
     text-align: center;
-    box-shadow: #7D7B7B;
 }
-
-.btn-red {
-    color: #000000;
-    background-color: #7D7B7B;
-}
-
-.btn-red:hover {
-    background-color: #BF3A3A;
-}
-
-.btn-red {
-    background-color: #BF3A3A;
-}
-
-
-
-
-
-
-
